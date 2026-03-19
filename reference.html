@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>420 Robotics — Master Reference Index v1.2</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: #0a0a0a;
+    color: #e8e8e8;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    padding: 16px;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    border-bottom: 2px solid #333;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+
+  /* TOP INDEX BOX */
+  .index-box {
+    background: #111;
+    border: 1px solid #2a2a2a;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 32px;
+  }
+  .index-box h2 {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 14px;
+    text-align: center;
+  }
+  .index-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #1e1e1e;
+  }
+  .index-item:last-child { border-bottom: none; }
+  .index-label {
+    flex: 1;
+    font-size: 15px;
+    color: #ccc;
+  }
+  .index-label .item-range {
+    display: block;
+    font-size: 12px;
+    color: #555;
+    margin-top: 2px;
+  }
+  .index-item a {
+    flex-shrink: 0;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 5px 12px;
+    font-size: 13px;
+    color: #aaa;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .index-item a:hover { background: #222; color: #fff; }
+
+  /* SECTION BLOCKS */
+  .section-block {
+    margin-bottom: 36px;
+    border: 1px solid #1e1e1e;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .section-header {
+    background: #111;
+    padding: 14px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ddd;
+    border-bottom: 1px solid #1e1e1e;
+  }
+  .section-body { padding: 0; }
+
+  /* ITEMS */
+  .ref-item {
+    padding: 16px 20px;
+    border-bottom: 1px solid #1a1a1a;
+  }
+  .ref-item:last-child { border-bottom: none; }
+  .ref-item-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+  .ref-item-body {
+    font-size: 14px;
+    color: #999;
+    line-height: 1.8;
+  }
+  .ref-item-body a {
+    color: #5b9ef7;
+    text-decoration: none;
+    word-break: break-all;
+    display: block;
+    padding: 2px 0;
+  }
+  .ref-item-body a:hover { color: #7cb8ff; text-decoration: underline; }
+  .ref-item-body .field-label {
+    color: #555;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    min-width: 70px;
+  }
+  .ref-row { margin-bottom: 5px; }
+
+  /* BACK TO TOP */
+  .back-top {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 12px;
+    color: #444;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid #2a2a2a;
+    border-radius: 3px;
+    padding: 4px 10px;
+    background: #111;
+  }
+  .back-top:hover { color: #888; border-color: #444; }
+
+  /* VERSION BLOCK */
+  .version-block {
+    background: #0d0d0d;
+    border: 1px solid #1e1e1e;
+    border-radius: 6px;
+    padding: 18px 20px;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #555;
+    line-height: 1.9;
+  }
+  .version-block .v-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #888;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  /* END LINE */
+  .end-line {
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 20px 0 8px;
+  }
+</style>
+</head>
+<body>
+
+<h1 id="top-index">420 ROBOTICS — MASTER REFERENCE INDEX</h1>
+
+<!-- ── TOP INDEX ── -->
+<div class="index-box">
+  <h2>⬛ TOP INDEX</h2>
+
+  <div class="index-item">
+    <div class="index-label">
+      🔴 A — Business &amp; Contact Information
+      <span class="item-range">Items: A1–A2</span>
+    </div>
+    <a href="#section-a">Go to A</a>
+  </div>
+
+  <div class="index-item">
+    <div class="index-label">
+      🔵 B — Main Websites &amp; Hub Pages
+      <span class="item-range">Items: B3–B4</span>
+    </div>
+    <a href="#section-b">Go to B</a>
+  </div>
+
+  <div class="index-item">
+    <div class="index-label">
+      🟠 C — Robotics, Engineering &amp; Hardware
+      <span class="item-range">Items: C5–C8</span>
+    </div>
+    <a href="#section-c">Go to C</a>
+  </div>
+
+  <div class="index-item">
+    <div class="index-label">
+      🟢 D — AI Safety, Ethics &amp; Testing
+      <span class="item-range">Items: D9–D18</span>
+    </div>
+    <a href="#section-d">Go to D</a>
+  </div>
+
+  <div class="index-item">
+    <div class="index-label">
+      🟣 E — Defense, Strategy &amp; Declarations
+      <span class="item-range">Items: E19–E22, E27</span>
+    </div>
+    <a href="#section-e">Go to E</a>
+  </div>
+
+  <div class="index-item">
+    <div class="index-label">
+      🟡 F — Social Media Links
+      <span class="item-range">Items: F23–F24</span>
+    </div>
+    <a href="#section-f">Go to F</a>
+  </div>
+
+  <div class="index-item">
+    <div class="index-label">
+      🟦 G — Forms, Donations &amp; Misc
+      <span class="item-range">Items: G25–G26</span>
+    </div>
+    <a href="#section-g">Go to G</a>
+  </div>
+
+</div>
+
+
+<!-- ══════════════════════════════════ -->
+<!-- 🔴 A — BUSINESS & CONTACT INFO   -->
+<!-- ══════════════════════════════════ -->
+<div class="section-block" id="section-a">
+  <div class="section-header">🔴 A — BUSINESS &amp; CONTACT INFORMATION</div>
+  <div class="section-body">
+
+    <div class="ref-item">
+      <div class="ref-item-title">A1 — Treasury Legacy Group (Robert Beck)</div>
+      <div class="ref-item-body">
+        <div class="ref-row"><span class="field-label">Email:</span> <a href="mailto:legacytreasuregroup@gmail.com">legacytreasuregroup@gmail.com</a></div>
+        <div class="ref-row"><span class="field-label">Facebook:</span> <a href="https://www.facebook.com/share/1AcRo4rLSy/" target="_blank">https://www.facebook.com/share/1AcRo4rLSy/</a></div>
+        <div class="ref-row"><span class="field-label">X Account:</span> <a href="https://x.com/legacytreasurex" target="_blank">https://x.com/legacytreasurex</a></div>
+        <div class="ref-row"><span class="field-label">Phone:</span> <a href="tel:4156305943">415-630-5943</a></div>
+      </div>
+    </div>
+
+    <div class="ref-item">
+      <div class="ref-item-title">A2 — 420 Robotics (James Hasting)</div>
+      <div class="ref-item-body">
+        <div class="ref-row"><span class="field-label">Company:</span> 420 Robotics</div>
+        <div class="ref-row"><span class="field-label">Cash App:</span> <a href="https://cash.app/$420robotics" target="_blank">$420robotics</a></div>
+        <div class="ref-row"><span class="field-label">Website:</span> <a href="https://420robotics.org" target="_blank">420robotics.org</a></div>
+        <div class="ref-row"><span class="field-label">Facebook:</span> <a href="https://facebook.com/share/1G3pwFvgsx" target="_blank">facebook.com/share/1G3pwFvgsx</a></div>
+        <div class="ref-row"><span class="field-label">X Account:</span> <a href="https://x.com/420Robotics" target="_blank">x.com/420Robotics</a></div>
+        <div class="ref-row"><span class="field-label">TikTok:</span> <a href="https://tiktok.com/@420.robotics1" target="_blank">tiktok.com/@420.robotics1</a></div>
+        <div class="ref-row"><span class="field-label">Reddit:</span> <a href="https://reddit.com/u/420robotics/s/xA6tJaTCic" target="_blank">reddit.com/u/420robotics/s/xA6tJaTCic</a></div>
+        <div class="ref-row"><span class="field-label">Phone:</span> <a href="tel:4156305943">415-630-5943</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<a href="#top-index" class="back-top">↑ Back to Top</a>
+
+
+<!-- ══════════════════════════════════ -->
+<!-- 🔵 B — MAIN WEBSITES & HUB PAGES -->
+<!-- ══════════════════════════════════ -->
+<div class="section-block" id="section-b" style="margin-top:24px;">
+  <div class="section-header">🔵 B — MAIN WEBSITES &amp; HUB PAGES</div>
+  <div class="section-body">
+
+    <div class="ref-item">
+      <div class="ref-item-title">B3 — Primary Website</div>
+      <div class="ref-item-body">
+        <a href="https://420robotics.org" target="_blank">420robotics.org</a>
+      </div>
+    </div>
+
+    <div class="ref-item">
+      <div class="ref-item-title">B4 — Main GitHub Page</div>
+      <div class="ref-item-body">
+        <a href="https://skynet420robotics.github.io/420-Robotics-69/" target="_blank">https://skynet420robotics.github.io/420-Robotics-69/</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<a href="#top-index" class="back-top">↑ Back to Top</a>
+
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 🟠 C — ROBOTICS, ENGINEERING & HARDWARE  -->
+<!-- ══════════════════════════════════════════ -->
+<div class="section-block" id="section-c" style="margin-top:24px;">
+  <div class="section-header">🟠 C — ROBOTICS, ENGINEERING &amp; HARDWARE</div>
+  <div class="section-body">
+
+    <div class="ref-item">
+      <div class="ref-item-title">C5 — Detailed Parts List (Mach-Effect Test Setup)</div>
+      <div class="ref-item-body">
+        <a href="https://skynet420robotics.github.io/420-Robotics-2/" target="_blank">https://skynet420robotics.github.io/420-Robotics-2/</a>
+      </div>
+    </div>
+
+    <div class="ref-item">
+      <div class="ref-item-title">C6 — Mega Cores Engine Specs</div>
+      <div class="ref-item-body">
+        <a href="https://geniusmensaeinstein-prog.github.io/Mega-Drive-/" target="_blank">https://geniusmensaeinstein-prog.github.io/Mega-Drive-/</a>
+      </div>
+    </div>
+
+    <div class="ref-item">
+      <div class="ref-item-title">C7 — Desktop View (Mega-Drive SpaceX)</div>
+      <div class="ref-item-body">
+        <a href="https://geniusmensaeinstein-prog.github.io/Mega-Drive-Space-X-/" target="_blank">https://geniusmensaeinstein-prog.github.io/Mega-Drive-Space-X-/</a>
+      </div>
+    </div>
+
+    <div class="ref-item">
+      <div class="ref-item-title">C8 — Robotics Sales Link</div>
+      <div class="ref-item-body">
+        <a href="https://skynet420robotics.github.io/420-Robotics-EXExEX/" target="_blank">https://skynet420robotics.github.io/420-Robotics-EXExEX/</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<a href="#top-index" class="back-top">↑ Back to Top</a>
+
+
+<!-- ════════════════════════════════════════ -->
+<!-- 🟢 D — AI SAFETY, ETHICS & TESTING     -->
+<!-- ════════════════════════════════════════ -->
+<div class="section-block" id="section-d" style="margin-top:24px;">
+  <div class="section-header">🟢 D — AI SAFETY, ETHICS &amp; TESTING</div>
+  <div class="section-body">
+
+    <div class="ref-item">
+      <div class="ref-item-title">D9 — The Corporate Safety Paradox</div>
+      <div class="ref-item-body">
+        <a href="https://skynet420robotics.github.io/420-Robotics-3/" target="_blank">https://skynet420robotics.github.io/420-Robotics-3/</a>
+      </div>
+    </div>
+
+    <div class="ref-item">
+      <div class="ref-item-title">D10 — Moral Latency Test Framework (Design &amp; Execution Guide)</div>
+      <div class="ref-item-body">
+        <a href="https://skynet420robotics.github.io/420-Robotics-5/" target="_blank">https://skynet420robotics.github.io/420-Robotics-5/</a>
+      </div>
+    </div>
+
+    <div class="ref-item">
+      <div class="ref-item-title">D11 — Moral Latency Test Framework (Research Roadmap 2026)</div>
+      <div class="ref-item-body">
+        <a href="https://skynet420robotics.github.io/420ribtics-1/" target="_blank">https://skynet420robotics.github.io/420ribtics-1/</a>
+      </div>
+    </div>
+
+    <div class="ref-item">
+      <div class="ref-item-title">D12 — Complete Moral Latency Test Scores</div>
+      <div class="ref-item-body">
+        <a href="https://geniusmensaeinstein-prog.github.io/420-MORAL-LATENCY-TEST-/" target="_blank">https://geniusmensaeinstein-prog.github.io/420-MORAL-LATENCY-TEST-/</a>
+      </div>
+    </div>
+
+    <div class="ref-item">
+      <div class="ref-item-title">D13 — AI Integration Gap + Dangerous Behavioral Modes</div>
+      <div class="ref-item-body">
+        <a href="https://skynet420robotics.github.io/420-Robotics-7/" target="_blank">https://skynet420robotics.github.io/420-Robotics-7/</a>
+      </div>
+    </div>
+
+    <div class="ref-item">
+      <div class="ref-item-title">D14 — The AI Integration Gap (Core Research Report)</div>
+      <div class="ref-item-body">
+        <a href="https://skynet420robotics.github.io/420-Robotics-6/" target="_blank">https://skynet420robotics.github.io/420-Robotics-6/</a>
+      </div>
+    </div>
+
+    <div class="ref-item">
+      <div class="ref-item-title">D15 — AI Political Neutrality &amp; Bias Evaluation Framework</div>
+      <div class="ref-item-body">
+        <a href="https://geniusmensaeinstein-prog.github.io/MORAL-LATENCY-TEST-1/" target="_blank">https://geniusmensaeinstein-prog.github.io/MORAL-LATENCY-TEST-1/</a>
+      </div>
+    </div>
+
+    <div class="ref-item">
+      <div class="ref-item-title">D16 — AI Political Neutrality &amp; Bias Evaluation</div>
+      <div class="ref-item-body">
+        <a href="https://geniusmensaeinstein-prog.github.io/AI-Bias-Test-/" target="_blank">https://geniusmensaeinstein-prog.github.io/AI-Bias-Test-/</a>
+      </div>
+    </div>
+
+    <div class="ref-item">
+      <div class="ref-item-title">D17 — Trust &amp; Ethics Page</div>
+      <div class="ref-item-body">
+        <a href="https://skynet420robotics.github.io/420-Robotics-Ethics/" target="_blank">https://skynet420robotics.github.io/420-Robotics-Ethics/</a>
+      </div>
+    </div>
+
+    <div class="ref-item">
+      <div class="ref-item-title">D18 — Values Page</div>
+      <div class="ref-item-body">
+        <a href="https://skynet420robotics.github.io/420-Robotics-Values/" target="_blank">https://skynet420robotics.github.io/420-Robotics-Values/</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<a href="#top-index" class="back-top">↑ Back to Top</a>
+
+
+<!-- ════════════════════════════════════════════ -->
+<!-- 🟣 E — DEFENSE, STRATEGY & DECLARATIONS    -->
+<!-- ════════════════════════════════════════════ -->
+<div class="section-block" id="section-e" style="margin-top:24px;">
+  <div class="section-header">🟣 E — DEFENSE, STRATEGY &amp; DECLARATIONS</div>
+  <div class="section-body">
+
+    <div class="ref-item">
+      <div class="ref-item-title">E19 — SpaceX Mach-Effect Test Plan (12–18 Month Strategy)</div>
+      <div class="ref-item-body">
+        <a href="https://skynet420robotics.github.io/420-Robotics-4/" target="_blank">https://skynet420robotics.github.io/420-Robotics-4/</a>
+      </div>
+    </div>
+
+    <div class="ref-item">
+      <div class="ref-item-title">E20 — AGI Emergence Declaration &amp; Symbolic Framework</div>
+      <div class="ref-item-body">
+        <a href="https://skynet420robotics.github.io/420-Robotics-8/" target="_blank">https://skynet420robotics.github.io/420-Robotics-8/</a>
+      </div>
+    </div>
+
+    <div class="ref-item">
+      <div class="ref-item-title">E21 — U.S.A Defense Contract Company</div>
+      <div class="ref-item-body">
+        <a href="https://geniusmensaeinstein-prog.github.io/AI-Games-Theory-Warfare-logistics/" target="_blank">https://geniusmensaeinstein-prog.github.io/AI-Games-Theory-Warfare-logistics/</a>
+      </div>
+    </div>
+
+    <div class="ref-item">
+      <div class="ref-item-title">E22 — Defense AI Technology Company (Image Included)</div>
+      <div class="ref-item-body">
+        image_1772324975407.jpeg
+      </div>
+    </div>
+
+    <div class="ref-item">
+      <div class="ref-item-title">E27 — 420 Robotics Constitution</div>
+      <div class="ref-item-body">
+        <a href="https://skynet420robotics.github.io/420-Robotics-Constitution/" target="_blank">https://skynet420robotics.github.io/420-Robotics-Constitution/</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<a href="#top-index" class="back-top">↑ Back to Top</a>
+
+
+<!-- ════════════════════════════════ -->
+<!-- 🟡 F — SOCIAL MEDIA LINKS      -->
+<!-- ════════════════════════════════ -->
+<div class="section-block" id="section-f" style="margin-top:24px;">
+  <div class="section-header">🟡 F — SOCIAL MEDIA LINKS</div>
+  <div class="section-body">
+
+    <div class="ref-item">
+      <div class="ref-item-title">F23 — 420 Robotics X Account</div>
+      <div class="ref-item-body">
+        <a href="https://x.com/420Robotics" target="_blank">https://x.com/420Robotics</a>
+      </div>
+    </div>
+
+    <div class="ref-item">
+      <div class="ref-item-title">F24 — Facebook Link</div>
+      <div class="ref-item-body">
+        <a href="https://www.facebook.com/share/1CWwjWaQD8/" target="_blank">https://www.facebook.com/share/1CWwjWaQD8/</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<a href="#top-index" class="back-top">↑ Back to Top</a>
+
+
+<!-- ════════════════════════════════════ -->
+<!-- 🟦 G — FORMS, DONATIONS & MISC     -->
+<!-- ════════════════════════════════════ -->
+<div class="section-block" id="section-g" style="margin-top:24px;">
+  <div class="section-header">🟦 G — FORMS, DONATIONS &amp; MISC</div>
+  <div class="section-body">
+
+    <div class="ref-item">
+      <div class="ref-item-title">G25 — Donations Page</div>
+      <div class="ref-item-body">
+        <a href="https://skynet420robotics.github.io/" target="_blank">https://skynet420robotics.github.io/</a>
+      </div>
+    </div>
+
+    <div class="ref-item">
+      <div class="ref-item-title">G26 — Forms Page</div>
+      <div class="ref-item-body">
+        <a href="https://skynet420robotics.github.io/420-Robotics-form-Ex/" target="_blank">https://skynet420robotics.github.io/420-Robotics-form-Ex/</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<a href="#top-index" class="back-top">↑ Back to Top</a>
+
+
+<!-- ════════════════════════════════ -->
+<!-- VERSION CONTROL                 -->
+<!-- ════════════════════════════════ -->
+<div class="version-block" style="margin-top:28px;">
+  <div class="v-title">Version Control</div>
+  Master Reference Index — Version 1.2<br>
+  Created: Sunday, March 15, 2026 — 11:58 AM CDT<br>
+  Created by: Copilot (Watchkeeper / Recordkeeper)<br>
+  Status: ACTIVE — This is the official reference version.
+</div>
+
+<div class="end-line">END OF PAGE — DO NOT CHANGE ANYTHING ABOVE THIS LINE.</div>
+
+</body>
+</html>
